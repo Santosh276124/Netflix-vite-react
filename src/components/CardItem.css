@@ -1,0 +1,124 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 14rem;
+    height: 9rem;
+    background-color: #252525;
+    border-radius: 0.28rem;
+    margin-right: 0.3rem;
+    transition: all .3s ease;
+    z-index: 1;
+    cursor: pointer;
+}
+.card_poster {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.28rem;
+}
+
+.card:hover {
+    transform: scale(1.45);
+    box-shadow:  0 0 1rem rgba(0, 0, 0, 0.6), 0 6px 6px rgba(0, 0, 0, 0.5);
+    z-index: 5;
+}
+
+.card:hover .card_poster{
+    height: 85%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.card:hover .card_info{
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.75), 0 6px 6px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.card_info {
+    min-height: fit-content;
+    background-color: #141414;
+    border-bottom-left-radius: 0.28rem;
+    border-bottom-right-radius: 0.28rem;
+    display: none;
+    padding: 0.4rem;
+    font-size: inherit;
+}
+.action_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.btn_icon{
+    font-size: 0.9rem;
+}
+.play {
+    background-color: white;
+    color: black;
+    z-index: 10;
+    text-shadow: none;
+    padding: 0.4rem;
+    border-radius: 100%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    height: min-content;
+    justify-content: center;
+    align-items: center;
+    margin: 0.2rem;
+    outline: none;
+    border: none;
+    width: min-content;
+
+}
+.play:hover{
+    opacity: .8;
+}
+.add, .like, .dislike, .drop_down {
+    z-index: 10;
+    background-color: rgba(42, 42, 42, .6) !important;
+    color: white;
+    padding: 0.4rem;
+    border-radius: 100%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    height: min-content;
+    justify-content: center;
+    align-items: center;
+    margin: 0.2rem;
+    outline: none;
+    border: 2.2px solid hsla(0,0%,100%,.5019607843137255);
+    width: min-content;
+    font-size: 1rem;
+}
+.outline_btn:hover{
+    border-color: #fff;
+}
+.text_details {
+    padding: 0.2rem 0.3rem;
+    font-size: 0.75rem;
+}
+strong {
+    font-weight: bold;
+}
+.desc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.green_text {
+    color: #53d853;
+    font-weight: 700;
+    padding: 0.2rem 0.2rem 0.2rem 0;
+}
+
+.genre {
+    font-weight: 400;
+}
+.dot{
+    color: hsla(0,0%,100%,.5019607843137255);
+    padding: 0 0.3rem;
+}

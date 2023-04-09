@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+html::-webkit-scrollbar {
+    width: 0.2rem;
+}
+html::-webkit-scrollbar-track {
+    
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+    background: #E50914;
+   
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+} 

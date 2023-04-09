@@ -1,0 +1,108 @@
+.banner {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 85vh;
+}
+.banner_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 92%;
+    z-index: 0;
+    object-fit: fill;
+    mask-image: linear-gradient(180deg, #141414 36%, transparent 100%);
+    -webkit-mask-image: -webkit-linear-gradient(top,#141414 36%,transparent);
+    -webkit-mask-image: -webkit-gradient(linear,left top,left bottom,color-stop(36%,#141414),to(transparent));
+   
+}
+
+.banner_details {
+    z-index: 10;
+    width: 35%;
+    margin-left: 3.5rem;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.45);
+}
+.banner_title {
+    font-weight: 600;
+    padding: 0.4rem;
+    font-size: 32px;
+}
+.banner_desc {
+    font-weight: 400;
+    padding: 0.3rem;
+    overflow: hidden ;
+}
+.banner_btns {
+    display: flex;
+    flex-direction: row;
+    margin: 0.3rem 0;
+}
+.btn {
+    
+    z-index: 10;
+    text-shadow: none;
+    width: fit-content;
+    padding: 0.7rem 1.8rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0.4rem;
+    outline: none;
+    border: none;
+
+}
+.banner_btns .info_btn{
+    color: #fff;
+    background-color: rgba(109, 109, 109, 0.7);
+}
+.banner_btns span {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-left: 0.8rem;
+}
+.banner_btns .btn_icon{
+    font-size: 1.4rem;
+
+}
+
+
+@media screen and (max-width: 768px){
+    .banner_title{
+        font-size: 2.2rem;
+    }
+    .banner_desc{
+        font-size: .9rem;
+    }
+    .banner_btns span{
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .banner {
+        height: 64vh;
+    }
+    .banner_img{
+        height: 68vh;       
+    }
+    .banner_details {
+        width: 75%;
+        justify-content: center;
+        text-align: center;
+        align-self: flex-end;
+        margin-bottom: 0.7rem;
+        margin-left: 2.9rem;
+    }
+    .banner_btns{
+        justify-content: center;
+    }
+}
